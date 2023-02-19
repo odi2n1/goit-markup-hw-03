@@ -1,0 +1,192 @@
+.body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    background: #E5E5E5;
+}
+:root {
+    --brand-color:#212121;
+    --background-color: #E5E5E5;
+    --highlight-color: #2196F3;
+    --text-description-color: #757575;
+}
+ /* header and footer */
+
+.footer-logo,
+.header-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2; 
+    letter-spacing: 0.03em;
+    color: #2196F3;    
+}
+.header-logo::after {
+    content: "Studio";
+    color: #000000;
+}
+.footer-logo::after {
+    content: "Studio";
+    color: #FFFFFF;
+}
+.header-buttons li a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+}
+.contact-info-header li a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-description-color);
+}
+.contact-info-header li a:hover,
+.contact-info:hover li a:hover {
+    color: var(--highlight-color);
+}
+.contact-info-header li a:focus,
+.contact-info:focus li a:focus {
+    color: var(--highlight-color);
+}
+.header-buttons,
+.contact-info-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.header-buttons li a:hover,
+.header-buttons li a:focus {
+    color: var(--highlight-color);
+}
+.footer-section {
+    background: #2F303A;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-adress {
+    color: #FFFFFF;
+}
+.footer-contact {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.contact-info li a:hover,
+.contact-info li a:focus {
+    color: var(--highlight-color);
+}
+/* body  */
+.unstyled-list li {
+    list-style: none;
+    text-decoration: none;
+}
+.unstyled-list a {
+    list-style: none;
+    text-decoration: none;   
+}
+.portofolio-buttons li button {
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+    border: none;
+}
+.portofolio-buttons li button:hover,
+.portofolio-buttons li button:focus {
+    background: var(--highlight-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.portofolio-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--brand-color);
+}
+.portofolio-description {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--text-description-color);
+}
+.pointer li button {
+    cursor: pointer;
+}
+.title-section {
+    background: #2F303A; 
+}
+.index-main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.button {
+    background: var(--highlight-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.index-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.index-paragraph {
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: var(--text-description-color);
+}
+.index-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.person-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.person-ocupation {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--text-description-color);
+}
+.our-team {
+    background: #F5F4FA;
+}
