@@ -3,6 +3,8 @@
     font-style: normal;
     font-weight: 400;
     background: #E5E5E5;
+    box-sizing: border-box;
+    width: 1600px;
 }
 :root {
     --brand-color:#212121;
@@ -10,6 +12,15 @@
     --highlight-color: #2196F3;
     --text-description-color: #757575;
 }
+
+* {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
  /* header and footer */
 
 .footer-logo,
@@ -20,7 +31,9 @@
     font-size: 26px;
     line-height: 1.2; 
     letter-spacing: 0.03em;
-    color: #2196F3;    
+    color: #2196F3;
+    width: 145px;
+    height: 31px;    
 }
 .header-logo::after {
     content: "Studio";
@@ -36,6 +49,14 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--brand-color);
+    width: 58px;
+    height: 16px;
+}
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 93px;
 }
 .contact-info-header li a {
     font-weight: 500;
@@ -43,6 +64,8 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-description-color);
+    width: 113px;
+    height: 16px;
 }
 .contact-info-header li a:hover,
 .contact-info:hover li a:hover {
@@ -67,12 +90,19 @@
 }
 .footer-section {
     background: #2F303A;
+    width: 1600px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    padding-left: 215px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px 60px 215px;
+
 }
 .footer-adress {
+    font-style: normal;
     color: #FFFFFF;
 }
 .footer-contact {
@@ -80,10 +110,23 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
 }
 .contact-info li a:hover,
 .contact-info li a:focus {
     color: var(--highlight-color);
+}
+.footer-logo-bottom {
+    padding-bottom: 28px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 28px;
+    gap: 12px;
+}
+.footer-class {
+    padding-top: 94px;
 }
 /* body  */
 .unstyled-list li {
@@ -93,6 +136,10 @@
 .unstyled-list a {
     list-style: none;
     text-decoration: none;   
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .portofolio-buttons li button {
     background: #F5F4FA;
@@ -105,11 +152,38 @@
     color: var(--brand-color);
     border: none;
 }
+.portofolio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 94px 0px 50px 0px;
+}
 .portofolio-buttons li button:hover,
 .portofolio-buttons li button:focus {
     background: var(--highlight-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    color: #FFFFFF;
+}
+.portofolio-subtitle,
+.portofolio-description {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    
+}
+.portofolio-subtitle {
+    border-bottom: none;
+    border-top: none;
+}
+.portofolio-description {
+    border-top: none;
+}
+.portofolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 .portofolio-subtitle {
     font-weight: 700;
@@ -117,18 +191,25 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--brand-color);
+    padding: 20px 24px 4px 24px;
 }
 .portofolio-description {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--text-description-color);
+    padding: 0px 24px 20px 24px;
 }
 .pointer li button {
     cursor: pointer;
 }
 .title-section {
+    height: 600px;
     background: #2F303A; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .index-main-title {
     font-weight: 900;
@@ -138,6 +219,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    width: 696px;
+    height: 120px;
 }
 .button {
     background: var(--highlight-color);
@@ -145,13 +228,14 @@
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    display: flex;
+    line-height: 1.87;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
     color: #FFFFFF;
+    width: 200px;
+    height: 50px;
 }
 .index-subtitle {
     font-weight: 700;
@@ -159,12 +243,16 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    width: 270px;
+    height: 16px;
+    
 }
 .index-paragraph {
     font-size: 14px;
     line-height: 2;
     letter-spacing: 0.03em;
     color: var(--text-description-color);
+      
 }
 .index-title{
     font-weight: 700;
@@ -172,6 +260,8 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    margin: 0px;
 }
 .person-name {
     font-weight: 500;
@@ -179,6 +269,7 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    padding: 30px 0px 10px 0px;
 }
 .person-ocupation {
     font-size: 16px;
@@ -186,7 +277,75 @@
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--text-description-color);
+    padding-bottom: 30px;
 }
 .our-team {
-    background: #F5F4FA;
+    background-color: #F5F4FA;
+    display: flex;
+    flex-direction: column;
 }
+.team-members-photos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.team-members-photos li {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.container {
+    width: 1200px;
+    align-items: center;
+    margin-left: 215px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    border-bottom: 1px solid #ECECEC;
+}
+.header-section {
+    display: flex;
+    height: 80px;
+    gap: 50px;
+    flex-grow: 1;
+    padding-left: 215px;
+}
+.right-navigation-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 225px;
+}
+.header-section,
+.right-navigation-list,
+.page-header {
+    align-items: center;
+}
+
+.strong-points {
+    display: flex;
+    justify-content: center;
+}
+.index-subtitle {
+    padding-bottom: 10px;
+}
+.index-paragraph {
+    padding-top: 10px;
+    padding-right: 30px;
+}
+.skills-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+
+
+

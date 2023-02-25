@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Web Studio Homework Project</title>
+        <link rel="stylesheet" href="css/modern-normalize.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,95 +11,101 @@
         <link rel="stylesheet" href="portfolio.html">
     </head>
     <body>
-        <header>
-            <nav class="unstyled-list">
-                <a class="header-logo" href="WebStudio.html">Web</a>
-                <ul class="header-buttons pointer">
-                    <li><a href="studio.html">Studio</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="studio.html">Contacts</a></li>
-                </ul>            
-            </nav>
-            <!--Header contact section -->
-            <div>
-                <ul class="contact-info-header pointer unstyled-list">
-                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a href="tel:+1212-772-4150">+1 212-772-4150</a></li>
-                </ul>
-            </div>
-        </header>
-        <main>
-            <!-- Title section -->
-            <section class="title-section">
-                <h1 class="index-main-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-                <button class="button" type="button">Request our service</button>
-            </section>
-            <!-- Strong points section -->
-            <section>
-                <ul class="unstyled-list">
-                    <li>
-                        <h3 class="main-subtitle">ATTENTION TO DETAILS</h3>
-                        <p class="index-paragraph">We go into all the details and processes of your business to develop a customized solution.</p>
-                    </li>
-                    <li>
-                        <h3 class="main-subtitle">PUNCTUALITY</h3>
-                        <p class="index-paragraph">With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.</p>
-                    </li>
-                    <li>
-                        <h3 class="main-subtitle">PLANNING</h3>
-                        <p class="index-paragraph">You will be able to observe and participate in every phase of solution development and implementation.</p>
-                    </li>
-                    <li>
-                        <h3 class="main-subtitle">MODERN TECHNOLOGIES</h3>
-                        <p class="index-paragraph">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
-                    </li>                                           
-                </ul>
-            </section>
-            <!-- Abillity section-->
-            <section>
-                <h2 class="index-title">What we do</h2>
-                <img src="images/skill1.jpg" alt="html code picture" width="370" height="294">
-                <img src="images/skill2.jpg" alt="layout picture" width="370" height="294">
-                <img src="images/skill3.jpg" alt="color palette picture" width="370" height="294">
-            </section>
-            <!-- Team section -->
-            <section class="our-team">
-                <h2 class="index-title">Our Team</h2>
-                <ul class="unstyled-list">
-                    <li>
-                        <img src="images/Christopher_Walker.jpg" alt="Christopher Walker picture" width="270" height="260">
-                        <h3 class="person-name">Christopher Walker</h3>
-                        <p class="person-ocupation">Product Designer</p>
-                    </li>
-                    <li>
-                        <img src="images/Kylie_Evans.jpg" alt="Kylie Evans picture" width="270" height="260">
-                        <h3 class="person-name">Kylie Evans</h3>
-                        <p class="person-ocupation">Frontend Developer</p>
-                    </li>
-                    <li>
-                        <img src="images/Ryan_Harris.jpg" alt="Ryan Harris picture" width="270" height="260">
-                        <h3 class="person-name">Ryan Harris</h3>
-                        <p class="person-ocupation">Marketing</p>
-                    </li>
-                    <li>
-                        <img src="images/Tyler_Moore.jpg" alt="Tyler Moore picture" width="270" height="260">
-                        <h3 class="person-name">Tyler Moore</h3>
-                        <p class="person-ocupation">UI Designer</p>
-                    </li>
-                </ul>
-            </section>         
-        </main>        
-        <footer>
-            <div class="footer-section unstyled-list">
-                <a class="footer-logo" href="WebStudio.html">Web</a>
-                <address>
-                    <ul class="contact-info">
-                        <li><a class="footer-adress" href="695_Park_Ave,_NY_10065,_USA">695 Park Ave, NY 10065, USA</a></li>
-                        <li><a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="footer-contact" href="tel:+1212-772-4150">+1 212-772-4150</a></li>
+        <div >
+            <header class="page-header">
+                <!--Header section -->
+                <nav class="unstyled-list header-section">
+                    <a class="header-logo" href="WebStudio.html">Web</a>
+                    <ul class="header-buttons pointer">
+                        <li><a href="studio.html">Studio</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="studio.html">Contacts</a></li>
+                    </ul>            
+                </nav>
+                <!--Header contact section -->
+                <div>
+                    <ul class="contact-info-header pointer unstyled-list right-navigation-list">
+                        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a href="tel:+1212-772-4150">+1 212-772-4150</a></li>
                     </ul>
-                </address>
+                </div>
+        </div>
+            <main>
+                <!-- Title section -->
+                <section class="title-section">
+                    <h1 class="index-main-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+                    <button class="button" type="button">Request our service</button>
+                </section>
+            <div class="container">
+                    <!-- Strong points section -->
+                    <section>
+                        <ul class=" unstyled-list strong-points section">
+                            <li>
+                                <h3 class="index-subtitle">ATTENTION TO DETAILS</h3>
+                                <p class="index-paragraph">We go into all the details and processes of your business to develop a customized solution.</p>
+                            </li>
+                            <li>
+                                <h3 class="index-subtitle">PUNCTUALITY</h3>
+                                <p class="index-paragraph">With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.</p>
+                            </li>
+                            <li>
+                                <h3 class="index-subtitle">PLANNING</h3>
+                                <p class="index-paragraph">You will be able to observe and participate in every phase of solution development and implementation.</p>
+                            </li>
+                            <li>
+                                <h3 class="index-subtitle">MODERN TECHNOLOGIES</h3>
+                                <p class="index-paragraph">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
+                            </li>                                           
+                        </ul>
+                    </section>
+                    <!-- Abillity section-->
+                    <section>
+                        <h2 class="index-title section">What we do</h2>
+                        <div class="skills-images">
+                            <img src="images/skill1.jpg" alt="html code picture" width="370" height="294">
+                            <img src="images/skill2.jpg" alt="layout picture" width="370" height="294">
+                            <img src="images/skill3.jpg" alt="color palette picture" width="370" height="294">
+                        </div>
+                    </section>
+                    <!-- Team section -->
+                    <section class="our-team section">
+                        <h2 class="index-title">Our Team</h2>
+                        <ul class="unstyled-list team-members-photos">
+                            <li>
+                                <img class="person-photo" src="images/Christopher_Walker.jpg" alt="Christopher Walker picture" width="270" height="260">
+                                <h3 class="person-name">Christopher Walker</h3>
+                                <p class="person-ocupation">Product Designer</p>
+                            </li>
+                            <li>
+                                <img class="person-photo" src="images/Kylie_Evans.jpg" alt="Kylie Evans picture" width="270" height="260">
+                                <h3 class="person-name">Kylie Evans</h3>
+                                <p class="person-ocupation">Frontend Developer</p>
+                            </li>
+                            <li>
+                                <img class="person-photo" src="images/Ryan_Harris.jpg" alt="Ryan Harris picture" width="270" height="260">
+                                <h3 class="person-name">Ryan Harris</h3>
+                                <p class="person-ocupation">Marketing</p>
+                            </li>
+                            <li>
+                                <img class="person-photo" src="images/Tyler_Moore.jpg" alt="Tyler Moore picture" width="270" height="260">
+                                <h3 class="person-name">Tyler Moore</h3>
+                                <p class="person-ocupation">UI Designer</p>
+                            </li>
+                        </ul>
+                    </section>         
+                </main>        
+                <footer>
+                    <div class="footer-section unstyled-list section">
+                        <a class="footer-logo footer-logo-bottom" href="WebStudio.html">Web</a>
+                        <address>
+                            <ul class="contact-info">
+                                <li><a class="footer-adress" href="695_Park_Ave,_NY_10065,_USA">695 Park Ave, NY 10065, USA</a></li>
+                                <li><a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                                <li><a class="footer-contact" href="tel:+1212-772-4150">+1 212-772-4150</a></li>
+                            </ul>
+                        </address>
+                    </div>
+                </footer>
             </div>
-        </footer>
     </body>   
 </html>
